@@ -1,10 +1,16 @@
 <template>
-  <div>
-    <h1 class="">Welcome to the homepage</h1>
-  </div>
+  <div>xx</div>
 </template>
 
 <script setup>
-let { data } = await useFetch('http://localhost:1337/api/posts');
-console.log(data);
+definePageMeta({
+  name: 'TrialsShow',
+});
+
+useHead({
+  title: 'Nails',
+});
+
+const { find } = useStrapi();
+const response = await find('posts');
 </script>

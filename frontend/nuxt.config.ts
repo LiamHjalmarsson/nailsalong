@@ -5,13 +5,22 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image',
+    '@nuxtjs/strapi',
+    '@nuxt/icon',
+  ],
 
-  // runtimeConfig: {
-  //   apiSecret: "key",
+  runtimeConfig: {
+    strapi: {
+      url: 'http://localhost:1337',
+    },
 
-  //   public: {
-  //     apiBase: '/api'
-  //   }
-  // }
+    public: {
+      strapi: {
+        url: 'http://localhost:1337',
+      },
+    },
+  },
 });
