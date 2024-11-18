@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_config_configs",
+  "info": {
+    "displayName": "config",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "socialMedia": {
+      "type": "enumeration",
+      "enum": [
+        "instagram",
+        "facebook",
+        "tiktok"
+      ],
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
