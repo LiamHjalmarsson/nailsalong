@@ -15,7 +15,7 @@
 
       <div>
         <button
-          class="px-6 py-2 bg-primary rounded-md shadow hover:bg-primary-hover transition duration-150 text-white font-semibold tracking-wider relative before:w-1/2 before:bg-primary-active before:z-20 after:w-1/2 after:bg-primary-active after:z-20">
+          class="px-6 py-2 bg-primary rounded-md shadow hover:bg-primary-hover transition duration-150 text-white font-semibold tracking-wider relative focus:ring-2 focus:ring-primary-focus">
           Book
         </button>
       </div>
