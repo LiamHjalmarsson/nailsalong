@@ -2,7 +2,13 @@
   <header
     class="fixed py-6 px-12 z-50 transition-colors duration-300 shadow w-full">
     <nav class="flex gap-6 justify-between items-center mx-auto max-w-3xl">
-      <h3>Header</h3>
+      <div>
+        <p class="flex items-center gap-2">
+          <span class="text-2xl text-secondary">Nails</span>
+          <span class="text-4xl text-secondary"> & </span>
+          <span class="text-2xl text-secondary">Style</span>
+        </p>
+      </div>
 
       <ul class="flex gap-6">
         <NavLink
