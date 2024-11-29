@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         noto: ['Noto Serif', 'serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        vibes: ['Great Vibes', 'sans-serif'],
       },
 
       colors: {

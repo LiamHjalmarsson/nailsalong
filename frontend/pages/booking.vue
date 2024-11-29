@@ -1,5 +1,13 @@
 <template>
-  <div class="absolute top-0 h-full w-full p-4 bg-black/40 z-50"></div>
-</template>
+  <div class="min-h-screen flex justify-center px-6 pb-6 pt-20">
+    <div class="w-full flex flex-col">
+      <CalenderHeader />
 
-<script setup></script>
+      <Calender />
+
+      <TimeSlots />
+
+      <BookingForm />
+    </div>
+  </div>
+</template>

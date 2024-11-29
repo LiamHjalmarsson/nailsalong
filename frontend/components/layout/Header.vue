@@ -1,9 +1,9 @@
 <template>
   <header class="absolute lg:px-12 transition-colors duration-300 w-full">
     <nav class="pl-6 flex gap-6 justify-between items-center mx-auto max-w-5xl">
-      <div class="py-4 text-2xl font-bold text-secondary">
-        <h1>Nail</h1>
-      </div>
+      <NuxtLink to="/">
+        <h1 class="py-4 text-3xl font-bold text-secondary font-vibes">Nail</h1>
+      </NuxtLink>
 
       <!-- Desktop Navigation -->
       <ul class="flex gap-6 max-lg:hidden">
@@ -14,6 +14,7 @@
 
       <!-- Mobile Navigation -->
       <Teleport to="body">
+        <!-- Overlay -->
         <Transition
           enter-active-class="transition-opacity duration-300"
           leave-active-class="transition-opacity duration-300 delay-75"
@@ -27,22 +28,42 @@
             class="fixed top-0 left-0 w-full h-full bg-black/60 z-40"></div>
         </Transition>
 
+        <!-- Sidebar -->
         <Transition
           enter-active-class="transition duration-300 delay-75"
           leave-active-class="transition duration-300"
           enter-from-class="-translate-x-full"
           enter-to-class="translate-x-0"
           leave-from-class="translate-x-0"
-          leave-to-class="-translate-x-full">
+          leave-to-class="-translate-x-full"
+          :duration="1400">
           <div
             v-show="menuOpen"
-            class="fixed w-2/3 h-full flex top-0 z-50 bg-white flex-col">
-            <h1 class="py-4 text-center w-full">Nail</h1>
+            class="fixed w-2/3 h-full flex top-0 z-50 bg-white flex-col justify-between items-center">
+            <div class="pt-6 h-1/3"></div>
 
-            <ul class="w-full space-y-4 px-4">
+            <ul
+              class="space-y-4 px-4 w-full h-1/3 flex justify-center items-center">
               <NavLink
                 url="/booking"
-                label="Booking" />
+                label="Booking"
+                class="w-full"
+                @close="menuOpen = false" />
+            </ul>
+
+            <ul class="pb-6 h-1/3 flex justify-end items-end flex-col">
+              <!-- <li
+                class="p-1 bg-secondary rounded-full w-10 h-10 flex justify-center items-center">
+                <Icon
+                  name="streamline:instagram"
+                  class="text-2xl bg-white" />
+              </li>
+              <li
+                class="p-1 bg-secondary rounded-full w-10 h-10 flex justify-center items-center mt-2">
+                <Icon
+                  name="mdi:gmail"
+                  class="text-2xl bg-white" />
+              </li> -->
             </ul>
           </div>
         </Transition>

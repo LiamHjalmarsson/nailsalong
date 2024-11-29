@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startHour": {
+      "type": "string",
+      "required": true,
+      "default": "09:00"
+    },
+    "endHour": {
+      "type": "string",
+      "required": true,
+      "default": "17:00"
+    },
+    "activeDays": {
+      "type": "json"
+    }
+  }
+}
