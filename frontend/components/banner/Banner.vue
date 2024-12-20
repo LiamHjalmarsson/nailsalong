@@ -22,12 +22,28 @@
             <div class="w-1/3 flex">
               <NuxtLink
                 to="booking"
-                class="py-3 rounded-lg overflow-hidden group w-full px-6 z-10 bg-primary text-center relative transition duration-300 focus:scale-110">
+                class="group relative p-2 w-full">
+                <div
+                  class="py-3 overflow-hidden w-full px-6 z-10 bg-gradient-to-r from-accent to-accent-hover text-center relative transition duration-300 focus:scale-110">
+                  <span
+                    class="group-hover:w-1/2 h-full delay-[600ms] rounded-l-lg rounded-br-full left-0 bg-neutral absolute top-0 w-0 transition-all duration-300 group-active:bg-neutral group-active:w-full group-focus:w-full group-active:rounded-none group-focus:bg-primary-focus"></span>
+
+                  <span class="relative z-10 tracking-wide font-bold">
+                    BOOK A TIME
+                  </span>
+                </div>
+
                 <span
-                  class="group-hover:w-1/2 h-full rounded-l-lg rounded-br-full left-0 bg-primary-hover absolute top-0 w-0 transition-all duration-300 group-active:bg-primary-active group-active:w-full group-focus:w-full group-active:rounded-br-lg group-focus:rounded-br-lg group-focus:bg-primary-focus"></span>
-                <span class="relative z-10 tracking-wide font-bold">
-                  BOOK A TIME
-                </span>
+                  class="absolute left-0 bottom-0 w-full h-1 bg-accent scale-x-0 origin-right transition-transform duration-150 ease-out group-hover:scale-x-100 z-10"></span>
+
+                <span
+                  class="absolute right-0 top-0 h-full w-1 bg-accent scale-y-0 origin-top transition-transform duration-150 delay-150 ease-out group-hover:scale-y-100 z-10"></span>
+
+                <span
+                  class="absolute left-0 top-0 w-full h-1 bg-accent scale-x-0 origin-left transition-transform duration-150 delay-300 ease-out group-hover:scale-x-100 z-10"></span>
+
+                <span
+                  class="absolute left-0 top-0 h-full w-1 bg-accent scale-y-0 origin-bottom transition-transform duration-150 delay-[450ms] ease-out group-hover:scale-y-100 z-10"></span>
               </NuxtLink>
             </div>
           </div>
