@@ -1,14 +1,28 @@
 <template>
-  <div
-    class="min-h-screen flex flex-col justify-between relative bg-secondary/10">
+  <div class="relative text-neutral bg-neutral-white">
     <Header />
 
-    <main class="flex-1 flex flex-col pb-6">
-      <slot />
+    <main>
+      <NuxtPage />
     </main>
+
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import Header from '~/components/layout/Header.vue';
+import Footer from '~/components/layout/Footer.vue';
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>

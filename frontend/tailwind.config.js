@@ -25,34 +25,32 @@ module.exports = {
           active: '#875447',
           disabled: '#f1eae3',
         },
-
         secondary: {
-          DEFAULT: '#c1a5b4',
-          hover: '#ac889a',
-          focus: '#946c7e',
-          active: '#7d5968',
-          disabled: '#f4eff2',
+          DEFAULT: '#5f4b3b',
+          hover: '#4a3a29',
+          focus: '#3b2c1b',
+          active: '#322111',
+          disabled: '#f1eae3',
+        },
+        accent: {
+          DEFAULT: '#b83a58',
+          hover: '#a0314b',
+          focus: '#8b293d',
+          active: '#6f1f30',
+          disabled: '#fce8ed',
+        },
+        background: {
+          DEFAULT: '#f2f2f2',
         },
 
-        three: {
-          DEFAULT: '#8790a9',
-          hover: '#68738f',
-          focus: '#4d556d',
-          active: '#444b60',
-          disabled: '#eceef2',
+        neutral: {
+          DEFAULT: '#263238',
+          darkGray: '#4D4D4D',
+          gray: '#717171',
+          lightGray: '#89939E',
+          silver: '#F5F7FA',
+          white: '#FFFFFF',
         },
-
-        gray: {},
-
-        black: {
-          DEFAULT: '#313131',
-        },
-
-        success: {},
-
-        danger: {},
-
-        alert: {},
       },
 
       boxShadow: {

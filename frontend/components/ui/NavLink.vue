@@ -1,17 +1,26 @@
 <template>
-  <li class="flex">
+  <li class="flex w-full group">
     <NuxtLink
       @click="handleMenu"
       :to="url"
-      class="font-vibes capitalize w-full py-2 px-4 font-semibold tracking-wider text-2xl text-secondary relative group text-center hover:scale-110 transition-transform duration-300 border-b border-secondary">
-      <span
-        class="absolute top-0 left-0 w-full bg-gradient-to-r from-transparent via-secondary to-transparent opacity-0 scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 transition-all duration-300 ease-in-out origin-center h-0.5"></span>
+      class="capitalize w-full py-4 px-4 font-semibold tracking-wider text-xl text-primary group-hover:text-accent relative text-center cursor-pointer transition duration-300">
       {{ label }}
 
       <span
-        :class="[
-          'absolute left-0 bottom-0 w-full bg-gradient-to-r from-transparent via-secondary to-transparent opacity-0 scale-x-0 group-hover:scale-x-100 group-hover:opacity-100 transition-all duration-300 ease-in-out origin-center h-0.5',
-        ]"></span>
+        class="absolute left-0 bottom-0 w-full h-0.5 bg-accent scale-x-0 origin-left transition-transform duration-150 ease-out group-hover:scale-x-100">
+      </span>
+
+      <span
+        class="absolute left-0 top-0 h-full w-0.5 bg-accent scale-y-0 origin-top transition-transform duration-150 ease-out delay-150 group-hover:scale-y-100">
+      </span>
+
+      <span
+        class="absolute left-0 top-0 w-full h-0.5 bg-accent scale-x-0 origin-right transition-transform duration-150 delay-100 ease-out group-hover:scale-x-100">
+      </span>
+
+      <span
+        class="absolute right-0 top-0 h-full w-0.5 bg-accent scale-y-0 origin-bottom transition-transform duration-150 delay-75 ease-out group-hover:scale-y-100">
+      </span>
     </NuxtLink>
   </li>
 </template>
