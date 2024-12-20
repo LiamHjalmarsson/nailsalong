@@ -11,7 +11,7 @@
             <span class="-rotate-45"> C </span>
           </span>
         </span>
-        <h1 class="text-4xl font-bold">Nail</h1>
+        <span class="text-4xl font-bold">Nail</span>
       </NuxtLink>
 
       <Sidebar

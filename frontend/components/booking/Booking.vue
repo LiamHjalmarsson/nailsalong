@@ -4,7 +4,7 @@
       class="max-w-7xl w-full flex mx-auto justify-between items-start gap-12">
       <div class="flex-1 flex flex-col gap-2 py-2 max-w-xl pr-8">
         <Heading
-          title="My Working Hours"
+          title="Book Appointment"
           subTitle=" Nails * Style * HandCare">
           <ul class="flex flex-col gap-8 mt-8">
             <li
@@ -21,6 +21,12 @@
               class="flex justify-between items-center border-primary border-b pb-4">
               <p class="text-lg font-semibold">Sunday & red days</p>
               <span class="font-thin text-neutral-darkGray">Closed</span>
+            </li>
+            <li class="flex justify-between items-center pb-4">
+              <p class="text-lg font-semibold">Location</p>
+              <span class="font-thin text-neutral-darkGray"
+                >1214 College Ave Santa Rosa, CA 95404</span
+              >
             </li>
           </ul>
         </Heading>

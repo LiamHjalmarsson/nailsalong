@@ -22,7 +22,7 @@
             <div class="w-1/3 flex">
               <NuxtLink
                 to="booking"
-                class="py-3 rounded-xl overflow-hidden group w-full px-6 z-10 bg-primary text-center relative transition duration-300 focus:scale-110">
+                class="py-3 rounded-lg overflow-hidden group w-full px-6 z-10 bg-primary text-center relative transition duration-300 focus:scale-110">
                 <span
                   class="group-hover:w-1/2 h-full rounded-l-lg rounded-br-full left-0 bg-primary-hover absolute top-0 w-0 transition-all duration-300 group-active:bg-primary-active group-active:w-full group-focus:w-full group-active:rounded-br-lg group-focus:rounded-br-lg group-focus:bg-primary-focus"></span>
                 <span class="relative z-10 tracking-wide font-bold">

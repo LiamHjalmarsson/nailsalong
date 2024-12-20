@@ -1,7 +1,7 @@
 <template>
   <div class="p-4 shadow flex-1 rounded-md relative group">
     <div
-      class="absolute w-full h-full top-0 left-0 group-hover:opacity-15 opacity-0 duration-300 transition">
+      class="absolute w-full h-full top-0 left-0 opacity-15 duration-300 transition">
       <NuxtImg
         src="/images/background.png"
         class="object-cover h-full w-full"
