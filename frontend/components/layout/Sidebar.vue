@@ -10,7 +10,7 @@
       <div
         @toggle="modelValue"
         @click="closed"
-        class="fixed top-0 left-0 w-full h-full bg-neutral-darkGray z-40 lg:hidden"></div>
+        class="fixed top-0 left-0 w-full h-full bg-neutral-darkGray/10 z-40 lg:hidden"></div>
     </Transition>
 
     <!-- Sidebar -->
