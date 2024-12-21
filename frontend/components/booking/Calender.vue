@@ -1,6 +1,7 @@
 <template>
   <div class="flex w-full items-center justify-center flex-1">
-    <div class="flex w-full flex-col rounded-lg shadow-lg overflow-hidden">
+    <div
+      class="flex w-full flex-col rounded-lg shadow-lg overflow-hidden bg-neutral-white">
       <!-- Header of calender -->
       <div
         class="flex justify-between p-2 items-center mb-4 bg-neutral text-neutral-white">
@@ -50,8 +51,16 @@
         <div
           v-for="(date, index) in daysInMonth"
           :key="index"
-          class="flex justify-center items-center h-10 w-full rounded-full cursor-pointer">
-          {{ date }}
+          class="flex justify-center items-center h-10 w-full rounded-full cursor-pointer group">
+          <span
+            class="w-8 h-8 flex justify-center items-center rounded-full"
+            :class="[
+              isToday(date) && !isSelected
+                ? 'bg-accent/50 '
+                : 'group-hover:text-accent',
+            ]">
+            {{ date }}
+          </span>
         </div>
       </div>
     </div>
@@ -106,7 +115,7 @@ const prevMonthDates = computed(() => {
   const prevYear =
     currentMonth.value === 0 ? currentYear.value - 1 : currentYear.value;
   const prevMonthDays = new Date(prevYear, prevMonth + 1, 0).getDate();
-  const startDayOfWeek = new Date(prevYear, prevMonth, prevMonthDays).getDay();
+
   return Array.from(
     { length: startDay.value },
     (_, i) => prevMonthDays - startDay.value + i + 1
@@ -156,11 +165,5 @@ const isToday = (date) => {
     currentMonth.value === today.getMonth() &&
     currentYear.value === today.getFullYear()
   );
-};
-
-const isPastDay = (date) => {
-  const today = new Date();
-  const currentDate = new Date(currentYear.value, currentMonth.value, date);
-  return currentDate < today && !isToday(date);
 };
 </script>

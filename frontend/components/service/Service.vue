@@ -15,19 +15,19 @@
 
     <div class="grid grid-cols-3 gap-8 mt-8">
       <ServiceCard
-        image="/images/hands.jpg"
+        image="/images/hand.png"
         title="Color Gel"
         subTitle="Come get"
         color="border-primary" />
 
       <ServiceCard
-        image="/images/display.jpg"
+        image="/images/nails.png"
         title="Nail Art"
         subTitle="Come get"
         color="border-secondary" />
 
       <ServiceCard
-        image="/images/banner.jpg"
+        image="/images/style.png"
         title="Spa Treatment"
         subTitle="Come get"
         color="border-accent" />

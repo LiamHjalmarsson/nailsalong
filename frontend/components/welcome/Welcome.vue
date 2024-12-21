@@ -1,10 +1,16 @@
 <template>
   <div
-    class="h-[50vh] w-full flex justify-center items-center bg-background py-8 mb-24">
-    <div class="max-w-7xl grid grid-cols-2 grid-rows-2 gap-8 h-full">
+    class="h-[50vh] w-full flex justify-center items-center bg-background py-8 mb-24 relative">
+    <NuxtImg
+      src="/images/background.png"
+      class="object-cover h-full w-full absolute opacity-15"
+      alt="Red Background Image" />
+
+    <div
+      class="max-w-7xl grid grid-cols-2 grid-rows-2 gap-8 h-full relative z-10">
       <div class="row-span-2 overflow-hidden rounded-lg shadow-lg">
         <NuxtImg
-          src="/images/me.jpg"
+          src="/images/me.png"
           class="object-cover h-full w-full"
           alt="Image description for accessibility" />
       </div>
@@ -26,8 +32,8 @@
 
       <div class="rounded-lg shadow-lg h-[130%]">
         <NuxtImg
-          src="/images/clean.jpg"
-          class="object-cover h-full w-full rounded-lg"
+          src="/images/clean.png"
+          class="object-cover object-bottom h-full w-full rounded-lg"
           alt="Image description for accessibility" />
       </div>
     </div>

@@ -6,21 +6,14 @@
           <NuxtLink
             to="/"
             class="flex gap-4">
-            <span
-              class="h-12 w-12 border-accent border-2 flex p-1 rotate-45 rounded-md">
-              <span
-                class="h-full w-full border-accent border-2 flex justify-center items-center rounded-md">
-                <span class="-rotate-45"> C </span>
-              </span>
-            </span>
-            <span class="text-4xl font-bold">Nail</span>
+            <span class="text-2xl font-bold">Nails by sissi </span>
           </NuxtLink>
 
           <div class="flex flex-col gap-8 mt-8">
             <div class="flex gap-4 items-center">
               <div
                 class="p-2 bg-neutral-white text-neutral rounded-md shadow flex justify-center items-center text-xl w-fit">
-                <Icon name="ion:logo-tiktok" />
+                <Icon name="material-symbols:call-sharp" />
               </div>
 
               <span> 0707070707 </span>
@@ -29,25 +22,26 @@
             <div class="flex gap-4 items-center">
               <div
                 class="p-2 bg-neutral-white text-neutral rounded-md shadow flex justify-center items-center text-xl w-fit">
-                <Icon name="ion:logo-tiktok" />
+                <Icon name="material-symbols:mail-sharp" />
               </div>
 
               <span> mail@mail.com </span>
             </div>
-          </div>
 
-          <div class="mt-8 flex gap-8">
-            <div
-              class="p-2 bg-neutral-white text-neutral rounded-md shadow flex justify-center items-center text-3xl w-fit">
-              <Icon name="ion:logo-instagram" />
+            <div class="flex gap-4 items-center">
+              <div
+                class="p-2 bg-neutral-white text-neutral rounded-md shadow flex justify-center items-center text-xl w-fit">
+                <Icon name="ion:logo-instagram" />
+              </div>
+              <span> nails.by.sissi85 </span>
             </div>
-            <div
-              class="p-2 bg-neutral-white text-neutral rounded-md shadow flex justify-center items-center text-3xl w-fit">
-              <Icon name="ion:logo-facebook" />
-            </div>
-            <div
-              class="p-2 bg-neutral-white text-neutral rounded-md shadow flex justify-center items-center text-3xl w-fit">
-              <Icon name="ion:logo-tiktok" />
+
+            <div class="flex gap-4 items-center">
+              <div
+                class="p-2 bg-neutral-white text-neutral rounded-md shadow flex justify-center items-center text-xl w-fit">
+                <Icon name="ion:logo-tiktok" />
+              </div>
+              <span> nails.by.sissi85 </span>
             </div>
           </div>
         </div>
@@ -73,8 +67,6 @@
             <li class="">Location</li>
           </ul>
         </div>
-
-        <div class="mt-8 h-full flex gap-4"></div>
 
         <div class="h-96 w-96">
           <Map />

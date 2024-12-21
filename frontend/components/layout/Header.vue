@@ -3,15 +3,8 @@
     <nav class="pl-6 flex gap-6 justify-between items-center mx-auto">
       <NuxtLink
         to="/"
-        class="flex gap-4 py-4 items-center justify-center">
-        <span
-          class="h-12 w-12 border-accent border-2 flex p-1 rotate-45 rounded-md">
-          <span
-            class="h-full w-full border-accent border-2 flex justify-center items-center rounded-md">
-            <span class="-rotate-45"> C </span>
-          </span>
-        </span>
-        <span class="text-4xl font-bold">Nail</span>
+        class="flex py-4 items-center justify-center">
+        <span class="ml-4 text-4xl font-bold">Nails by sissi</span>
       </NuxtLink>
 
       <Sidebar

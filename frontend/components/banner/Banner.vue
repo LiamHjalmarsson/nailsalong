@@ -4,7 +4,7 @@
       <div class="relative h-full w-full flex justify-center items-center">
         <div class="w-full h-full bg-black">
           <NuxtImg
-            src="/images/s.jpg"
+            src="/images/s.png"
             class="object-cover h-full w-full opacity-80"
             alt="Red Background Image" />
         </div>
@@ -26,7 +26,7 @@
                 <div
                   class="py-3 overflow-hidden w-full px-6 z-10 bg-gradient-to-r from-accent to-accent-hover text-center relative transition duration-300 focus:scale-110">
                   <span
-                    class="group-hover:w-1/2 h-full delay-[600ms] rounded-l-lg rounded-br-full left-0 bg-neutral absolute top-0 w-0 transition-all duration-300 group-active:bg-neutral group-active:w-full group-focus:w-full group-active:rounded-none group-focus:bg-primary-focus"></span>
+                    class="group-hover:w-full h-full delay-[600ms] left-0 bg-neutral absolute top-0 w-0 transition-all duration-300 origin-bottom-left group-active:bg-neutral"></span>
 
                   <span class="relative z-10 tracking-wide font-bold">
                     BOOK A TIME
