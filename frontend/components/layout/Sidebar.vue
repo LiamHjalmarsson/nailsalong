@@ -1,6 +1,6 @@
 <template>
   <Teleport to="body">
-    <Transition
+    <!-- <Transition
       enter-active-class="transition-opacity duration-300"
       leave-active-class="transition-opacity duration-300 delay-75"
       enter-from-class="opacity-0"
@@ -8,10 +8,8 @@
       leave-from-class="opacity-100"
       leave-to-class="opacity-0">
       <div
-        @toggle="modelValue"
-        @click="closed"
         class="fixed top-0 left-0 w-full h-full bg-neutral-darkGray/10 z-40 lg:hidden"></div>
-    </Transition>
+    </Transition> -->
 
     <!-- Sidebar -->
     <Transition
@@ -23,7 +21,7 @@
       leave-to-class="translate-x-full">
       <div
         v-show="modelValue"
-        class="fixed w-2/3 sm:w-1/2 md:w-1/5 h-full top-0 right-0 z-40 bg-neutral-white flex flex-col justify-between items-center shadow-lg px-12 py-24">
+        class="fixed w-2/3 sm:w-1/2 lg:w-1/3 xl:w-1/5 h-full top-0 right-0 z-40 bg-neutral-white flex flex-col justify-between items-center shadow-lg px-12 py-24">
         <ul class="gap-12 w-full flex flex-col justify-center items-center">
           <NavLink
             label="Booking"

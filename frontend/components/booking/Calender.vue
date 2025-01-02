@@ -28,21 +28,21 @@
       </div>
 
       <!-- Days of the week -->
-      <div class="grid grid-cols-7 text-center font-bold mb-3">
+      <div class="grid grid-cols-7 text-center font-bold mb-3 px-2">
         <div
           v-for="day in daysOfWeek"
           :key="day"
-          class="py-2">
+          class="py-2 text-sm">
           {{ day }}
         </div>
       </div>
 
-      <div class="grid grid-cols-7 gap-3 pb-6">
+      <div class="grid grid-cols-7 gap-3 pb-6 px-2">
         <!-- Days of month before -->
         <div
           v-for="n in startDay"
           :key="n"
-          class="flex justify-center items-center w-full rounded-full text-neutral-lightGray cursor-default">
+          class="flex justify-center items-center w-full rounded-full text-neutral-lightGray cursor-default text-sm">
           {{ prevMonthDates[n - 1] }}
         </div>
 
@@ -50,9 +50,9 @@
         <div
           v-for="(date, index) in daysInMonth"
           :key="index"
-          class="flex justify-center items-center h-10 w-full rounded-full cursor-pointer group">
+          class="flex justify-center items-center h-10 w-full rounded-full cursor-pointer group px-2 relative">
           <span
-            class="w-8 h-8 flex justify-center items-center rounded-full"
+            class="w-8 h-8 flex justify-center items-center rounded-full text-sm absolute"
             :class="[
               isToday(date) && !isSelected
                 ? 'bg-accent text-neutral-white'

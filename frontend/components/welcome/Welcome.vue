@@ -1,14 +1,14 @@
 <template>
   <div
-    class="h-[50vh] max-h-[700px] w-full flex justify-center items-center bg-background p-12 mb-24 relative">
+    class="lg:h-[50vh] lg:max-h-[700px] w-full flex justify-center items-center bg-background p-6 lg:p-12 mb-24 relative">
     <NuxtImg
       src="/images/background.png"
       class="object-cover h-full w-full absolute opacity-15"
       alt="Red Background Image" />
 
     <div
-      class="max-w-7xl grid grid-cols-2 grid-rows-2 gap-12 h-full relative z-10">
-      <div class="row-span-2 overflow-hidden shadow-lg">
+      class="max-w-7xl lg:grid lg:grid-cols-2 lg:grid-rows-2 gap-12 h-full relative z-10">
+      <div class="row-span-2 overflow-hidden shadow-lg max-lg:mb-12">
         <NuxtImg
           src="/images/me.png"
           class="object-cover h-full w-full"
@@ -30,10 +30,10 @@
         </Heading>
       </div>
 
-      <div class="">
+      <div class="max-lg:mt-12">
         <NuxtImg
           src="/images/clean.png"
-          class="object-cover object-bottom h-full w-full"
+          class="object-cover object-bottom h-64 lg:h-full w-full"
           alt="Image description for accessibility" />
       </div>
     </div>

@@ -1,10 +1,10 @@
 <template>
-  <header class="absolute top-0 z-40">
-    <nav class="pl-6 flex gap-6 justify-between items-center mx-auto">
+  <header class="absolute top-0">
+    <nav class="pl-3 md:pl-6 flex gap-6 justify-between items-center mx-auto">
       <NuxtLink
         to="/"
-        class="flex py-4 items-center justify-center">
-        <span class="ml-4 text-4xl font-bold">Nails by sissi</span>
+        class="flex py-4 items-center justify-center relative z-10">
+        <span class="ml-4 text-2xl md:text-4xl font-bold">Nails by sissi</span>
       </NuxtLink>
 
       <Sidebar

@@ -1,12 +1,15 @@
 <template>
   <footer class="text-neutral-white bg-neutral py-12">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="flex gap-24 justify-center items-start px-12">
-        <div class="">
+      <div
+        class="flex max-lg:flex-col gap-12 lg:gap-24 justify-center items-center lg:items-start">
+        <div class="text-center">
           <NuxtLink
             to="/"
             class="flex gap-4">
-            <span class="text-2xl font-bold">Nails by sissi </span>
+            <span class="text-2xl font-bold max-lg:text-center"
+              >Nails by sissi
+            </span>
           </NuxtLink>
 
           <div class="flex flex-col gap-6 mt-6">
@@ -46,8 +49,8 @@
           </div>
         </div>
 
-        <div class="">
-          <p class="text-xl font-semibold">Links</p>
+        <div class="text-center">
+          <p class="text-xl font-semibold max-lg:text-center">Links</p>
           <ul class="flex-1 gap-9 mt-8 flex flex-col">
             <li class="">
               <NuxtLink> Booking </NuxtLink>
@@ -58,8 +61,8 @@
           </ul>
         </div>
 
-        <div class="">
-          <p class="text-xl font-semibold">Open</p>
+        <div class="text-center">
+          <p class="text-xl font-semibold max-lg:text-center">Open</p>
           <ul class="flex-1 gap-9 mt-8 flex flex-col">
             <li class="">Monday - Friday</li>
             <li class="">Saturday</li>
@@ -68,17 +71,9 @@
           </ul>
         </div>
 
-        <div class="h-96 flex-1">
+        <div class="h-96 w-full lg:flex-1">
           <Map />
         </div>
-      </div>
-
-      <div class="border-t border-accent my-8"></div>
-
-      <div class="flex flex-col md:flex-row justify-center items-center">
-        <p class="text-sm text-center">
-          © 2025 My Brand. All rights reserved.
-        </p>
       </div>
     </div>
   </footer>

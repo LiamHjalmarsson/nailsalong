@@ -6,7 +6,7 @@
       alt="Red Background Image" />
 
     <div
-      class="max-w-7xl w-full flex mx-auto justify-between items-start gap-12 relative z-10 p-12">
+      class="max-w-7xl w-full flex max-lg:flex-col mx-auto justify-between items-start gap-12 relative z-10 p-6 lg:p-12">
       <div class="flex-1 py-3 max-w-xl">
         <Heading
           title="Book Appointment"
