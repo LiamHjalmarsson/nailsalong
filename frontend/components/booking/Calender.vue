@@ -1,12 +1,12 @@
 <template>
   <div class="flex w-full items-center justify-center flex-1">
     <div
-      class="flex w-full flex-col rounded-lg shadow-lg overflow-hidden bg-neutral-white">
+      class="flex w-full flex-col shadow-lg overflow-hidden bg-neutral-white">
       <!-- Header of calender -->
       <div
-        class="flex justify-between p-2 items-center mb-4 bg-neutral text-neutral-white">
+        class="flex justify-between p-2 items-center mb-6 bg-neutral text-neutral-white">
         <div
-          class="py-1 lg:py-2 px-2 lg:px-4 cursor-pointer"
+          class="py-1.5 lg:py-3 px-3 lg:px-6 cursor-pointer"
           :class="{ 'opacity-50 cursor-default': isPrevDisabled }"
           @click="!isPrevDisabled && changeMonth('prev')">
           <Icon
@@ -18,7 +18,7 @@
           <span>{{ currentYear }}</span>
         </div>
         <div
-          class="py-1 lg:py-2 px-2 lg:px-4 cursor-pointer"
+          class="py-1.5 lg:py-3 px-3 lg:px-6 cursor-pointer"
           :class="{ 'opacity-50 cursor-default': isNextDisabled }"
           @click="!isNextDisabled && changeMonth('next')">
           <Icon
@@ -28,7 +28,7 @@
       </div>
 
       <!-- Days of the week -->
-      <div class="grid grid-cols-7 text-center font-bold mb-2">
+      <div class="grid grid-cols-7 text-center font-bold mb-3">
         <div
           v-for="day in daysOfWeek"
           :key="day"
@@ -37,13 +37,12 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-7 gap-2 pb-4">
+      <div class="grid grid-cols-7 gap-3 pb-6">
         <!-- Days of month before -->
         <div
           v-for="n in startDay"
           :key="n"
-          class="flex justify-center items-center w-full rounded-full text-gray-400 cursor-pointer"
-          @click="changeMonthToPrev">
+          class="flex justify-center items-center w-full rounded-full text-neutral-lightGray cursor-default">
           {{ prevMonthDates[n - 1] }}
         </div>
 
@@ -56,7 +55,7 @@
             class="w-8 h-8 flex justify-center items-center rounded-full"
             :class="[
               isToday(date) && !isSelected
-                ? 'bg-accent/50 '
+                ? 'bg-accent text-neutral-white'
                 : 'group-hover:text-accent',
             ]">
             {{ date }}

@@ -4,7 +4,7 @@
       title="Services"
       subTitle="Experience My"
       class="max-w-3xl mx-auto text-center justify-center items-center">
-      <p class="text-gray-700 leading-relaxed my-8">
+      <p class="text-neutral-darkGray leading-relaxed mt-3">
         We want to provide a new type of nail salon, a comfy and warm space that
         you can enjoy. We use all organic and nature product to give you the
         best experience. We provide all organic treatments, no harsh chemicals,
@@ -13,7 +13,7 @@
       </p>
     </Heading>
 
-    <div class="grid grid-cols-3 gap-8 mt-8">
+    <div class="grid grid-cols-3 gap-12 px-12 mt-12">
       <ServiceCard
         image="/images/hand.png"
         title="Color Gel"

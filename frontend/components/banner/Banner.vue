@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <div class="-mt-12 w-full left-0 z-10 relative">
+      <div class="-mt-12 w-full left-0 z-10 relative px-12">
         <div class="mx-auto max-w-5xl flex gap-12">
           <IconCard
             icon="mdi-nail"

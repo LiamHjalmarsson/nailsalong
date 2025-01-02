@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full py-12 flex flex-col">
+  <div class="w-full p-12 flex flex-col">
     <Heading
       title="Get Social Together"
       subTitle="Let us"
@@ -7,9 +7,9 @@
     </Heading>
 
     <div class="my-12 max-w-7xl mx-auto">
-      <div class="max-h-96 flex gap-4">
+      <div class="max-h-72 flex gap-3">
         <div
-          class="relative flex-1 group overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:flex-[2]">
+          class="relative flex-1 group overflow-hidden shadow-xl transition-all duration-500 hover:flex-[2]">
           <NuxtImg
             src="/images/hand.png"
             class="object-cover h-full w-full group-hover:scale-110 transition-transform duration-500"
@@ -17,7 +17,7 @@
         </div>
 
         <div
-          class="relative flex-1 group overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:flex-[2]">
+          class="relative flex-1 group overflow-hidden shadow-xl transition-all duration-500 hover:flex-[2]">
           <NuxtImg
             src="/images/nails.png"
             class="object-cover h-full w-full group-hover:scale-110 transition-transform duration-500"
@@ -25,7 +25,7 @@
         </div>
 
         <div
-          class="relative flex-1 group overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:flex-[2]">
+          class="relative flex-1 group overflow-hidden shadow-xl transition-all duration-500 hover:flex-[2]">
           <NuxtImg
             src="/images/style.png"
             class="object-cover h-full w-full group-hover:scale-110 transition-transform duration-500"
@@ -33,7 +33,7 @@
         </div>
 
         <div
-          class="relative flex-1 group overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:flex-[2]">
+          class="relative flex-1 group overflow-hidden shadow-xl transition-all duration-500 hover:flex-[2]">
           <NuxtImg
             src="/images/s.png"
             class="object-cover h-full w-full group-hover:scale-110 transition-transform duration-500"
